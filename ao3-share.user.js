@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AO3 Share Panel
 // @namespace    https://archiveofourown.org/
-// @version      2.1.0
+// @version      2.1.1
 // @description  Professional sharing panel for AO3 works: Generate QR codes, shareable cards, and formatted text with customizable options
 // @author       AO3 Share Panel Contributors
 // @match        https://archiveofourown.org/works/*
@@ -1485,7 +1485,7 @@
           width:100%;
         }
         #ao3sp-preview-canvas{
-          display:block; width:100% !important; height:auto !important;
+          display:block; max-width:100%;
         }
 
         /* Right: controls */
