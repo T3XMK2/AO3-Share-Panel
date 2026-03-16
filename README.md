@@ -2,7 +2,7 @@
 
 > A userscript that adds a fully-featured sharing panel to every [Archive of Our Own](https://archiveofourown.org/) work page.
 
-![Version](https://img.shields.io/badge/version-2.1.1-red)
+![Version](https://img.shields.io/badge/version-2.1.2-red)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Platform](https://img.shields.io/badge/platform-Tampermonkey%20%7C%20Violentmonkey%20%7C%20Greasemonkey-green)
 
@@ -102,6 +102,9 @@ The following values can be adjusted in the `CONFIG` object at the top of the sc
 ---
 
 ## Changelog
+
+### v2.1.2 — 2026-03-16
+- **Fix card preview scrolling**: added `flex-shrink:0` to the preview wrapper so tall cards (many tags, long summary) are no longer clipped — the preview column scrolls down to reveal the full card.
 
 ### v2.1.1 — 2026-03-16
 - **Fix card preview clipping on small screens**: removed `width:100% !important; height:auto !important` CSS overrides that fought with the JS-computed canvas dimensions, causing tall cards (many tags/summary) to be cropped at the bottom. The preview column now scrolls correctly for any card height.
