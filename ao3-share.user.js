@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AO3 Share Panel
 // @namespace    https://archiveofourown.org/
-// @version      2.1.2
+// @version      2.1.3
 // @description  Professional sharing panel for AO3 works: Generate QR codes, shareable cards, and formatted text with customizable options
 // @author       AO3 Share Panel Contributors
 // @match        https://archiveofourown.org/works/*
@@ -1437,7 +1437,7 @@
         .ao3sp-panel{
           position:fixed; top:50%; left:50%;
           transform:translate(-50%,-50%) scale(0.98);
-          width:min(880px,96vw); max-height:min(92vh,900px);
+          width:min(880px,96vw); height:min(92vh,900px);
           background:${CONFIG.COLORS.panelBg};
           border:1px solid ${CONFIG.COLORS.border}; border-radius:10px;
           box-shadow:0 18px 60px rgba(0,0,0,0.35);
@@ -1587,7 +1587,7 @@
 
         /* Short viewports (e.g. laptop, 1080p with browser chrome/taskbar, 125% scaling) */
         @media(max-height:780px){
-          .ao3sp-panel{max-height:97vh;}
+          .ao3sp-panel{height:97vh;}
           .ao3sp-header{padding:10px 14px;}
           .ao3sp-controls-col{padding:10px 12px; gap:8px;}
           .ao3sp-fields-list{max-height:min(200px,20vh);}
